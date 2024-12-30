@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulateur de Prêt - CréditExpress</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/simulateur.css">
+</head>
+<body>
+    <!-- Header (même que index.html) -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><h1>CréditExpress</h1></a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html#products" class="nav-link">Nos produits</a></li>
+                <li><a href="index.html#testimonials" class="nav-link">Avis</a></li>
+                <li><a href="contact.html" class="nav-link">Aide & Contact</a></li>
+                <div class="nav-buttons">
+                    <li><a href="login.html" class="btn btn-outline">Connexion</a></li>
+                    <li><a href="register.html" class="btn btn-primary">Inscription</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="simulator-container">
+        <h1>Simulateur de Prêt Détaillé</h1>
+        
+        <div class="simulator-form">
+            <form id="detailed-simulation">
+                <div class="form-group">
+                    <label for="loan-type">Type de prêt</label>
+                    <select id="loan-type" required>
+                        <option value="">Sélectionnez le type de prêt</option>
+                        <option value="auto">Crédit Auto - TAEG 3.50%</option>
+                        <option value="perso">Crédit Personnel - TAEG 2.99%</option>
+                        <option value="pro">Crédit Professionnel - TAEG 2.50%</option>
+                        <option value="hypothecaire">Crédit Hypothécaire - TAEG 1.99%</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="loan-amount">Montant du prêt</label>
+                    <input type="range" id="loan-amount" min="1000" max="160000" step="1000" value="80000">
+                    <output for="loan-amount" id="amount-output">80 000 €</output>
+                </div>
+
+                <div class="form-group">
+                    <label for="loan-duration">Durée du prêt</label>
+                    <select id="loan-duration" required>
+                        <option value="">Sélectionnez la durée</option>
+                        <option value="12">12 mois</option>
+                        <option value="24">24 mois</option>
+                        <option value="36">36 mois</option>
+                        <option value="48">48 mois</option>
+                        <option value="60">60 mois</option>
+                        <option value="72">72 mois</option>
+                        <option value="84">84 mois</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Calculer mon prêt</button>
+            </form>
+        </div>
+
+        <div id="simulation-results" class="simulation-results hidden">
+            <h2>Résultats de votre simulation</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <h3>Mensualité estimée</h3>
+                    <p id="monthly-payment">-- €</p>
+                </div>
+                <div class="result-card">
+                    <h3>Taux d'intérêt</h3>
+                    <p id="interest-rate">--%</p>
+                </div>
+                <div class="result-card">
+                    <h3>Coût total du crédit</h3>
+                    <p id="total-cost">-- €</p>
+                </div>
+                <div class="result-card">
+                    <h3>Montant total dû</h3>
+                    <p id="total-amount">-- €</p>
+                </div>
+            </div>
+
+            <div class="next-steps">
+                <p>Pour continuer votre demande de prêt, veuillez vous connecter ou créer un compte.</p>
+                <div class="action-buttons">
+                    <a href="login.html" class="btn btn-primary">Se connecter</a>
+                    <a href="register.html" class="btn btn-outline">Créer un compte</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (même que index.html) -->
+    <footer class="footer">
+        <!-- Contenu du footer -->
+    </footer>
+
+    <script src="js/simulateur.js"></script>
+</body>
+</html>

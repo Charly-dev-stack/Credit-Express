@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord - CréditExpress</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><h1>CréditExpress</h1></a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="simulateur.html" class="btn btn-secondary">Nouveau prêt</a></li>
+                <li class="user-menu">
+                    <button class="btn btn-outline" id="userMenuBtn">
+                        <i class="fas fa-user"></i>
+                        <span>Mon compte</span>
+                    </button>
+                    <div class="dropdown-menu" id="userDropdown">
+                        <a href="dashboard.html">Tableau de bord</a>
+                        <a href="#" id="logoutBtn">Déconnexion</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <div class="dashboard-container">
+            <!-- Sidebar -->
+            <aside class="dashboard-sidebar">
+                <nav class="dashboard-nav">
+                    <ul>
+                        <li class="active">
+                            <a href="#overview" data-section="overview">
+                                <i class="fas fa-home"></i>
+                                Vue d'ensemble
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#loans" data-section="loans">
+                                <i class="fas fa-file-invoice-dollar"></i>
+                                Mes prêts
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#documents" data-section="documents">
+                                <i class="fas fa-folder"></i>
+                                Documents
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#profile" data-section="profile">
+                                <i class="fas fa-user-circle"></i>
+                                Mon profil
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#messages" data-section="messages">
+                                <i class="fas fa-envelope"></i>
+                                Messages
+                                <span class="badge">2</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="dashboard-content">
+                <!-- Vue d'ensemble -->
+                <section id="overview" class="dashboard-section active">
+                    <h2>Vue d'ensemble</h2>
+                    <div class="dashboard-cards">
+                        <div class="dashboard-card">
+                            <div class="card-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Prêts en cours</h3>
+                                <p class="card-value">2</p>
+                            </div>
+                        </div>
+                        <div class="dashboard-card">
+                            <div class="card-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Prêts approuvés</h3>
+                                <p class="card-value">1</p>
+                            </div>
+                        </div>
+                        <div class="dashboard-card">
+                            <div class="card-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="card-content">
+                                <h3>Documents à fournir</h3>
+                                <p class="card-value">3</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recent-activity">
+                        <h3>Activité récente</h3>
+                        <ul class="activity-list">
+                            <li>
+                                <i class="fas fa-info-circle"></i>
+                                <div class="activity-content">
+                                    <p>Votre demande de prêt auto a été approuvée</p>
+                                    <span class="activity-date">Aujourd'hui, 10:30</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-upload"></i>
+                                <div class="activity-content">
+                                    <p>Document "Justificatif de domicile" téléchargé</p>
+                                    <span class="activity-date">Hier, 15:45</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-comment"></i>
+                                <div class="activity-content">
+                                    <p>Nouveau message du conseiller</p>
+                                    <span class="activity-date">12/12/2024, 09:15</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Mes prêts -->
+                <section id="loans" class="dashboard-section">
+                    <h2>Mes prêts</h2>
+                    <div class="loans-list">
+                        <div class="loan-card">
+                            <div class="loan-header">
+                                <h3>Prêt Auto</h3>
+                                <span class="status approved">Approuvé</span>
+                            </div>
+                            <div class="loan-details">
+                                <div class="loan-info">
+                                    <p>Montant: 15 000 €</p>
+                                    <p>Durée: 48 mois</p>
+                                    <p>Taux: 2.99%</p>
+                                </div>
+                                <div class="loan-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 100%"></div>
+                                    </div>
+                                    <p>Dossier complet</p>
+                                </div>
+                            </div>
+                            <div class="loan-actions">
+                                <button class="btn btn-secondary">Voir les détails</button>
+                                <button class="btn btn-primary">Signer le contrat</button>
+                            </div>
+                        </div>
+
+                        <div class="loan-card">
+                            <div class="loan-header">
+                                <h3>Prêt Travaux</h3>
+                                <span class="status pending">En cours</span>
+                            </div>
+                            <div class="loan-details">
+                                <div class="loan-info">
+                                    <p>Montant: 25 000 €</p>
+                                    <p>Durée: 60 mois</p>
+                                    <p>Taux: 3.25%</p>
+                                </div>
+                                <div class="loan-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 60%"></div>
+                                    </div>
+                                    <p>Documents manquants</p>
+                                </div>
+                            </div>
+                            <div class="loan-actions">
+                                <button class="btn btn-secondary">Voir les détails</button>
+                                <button class="btn btn-primary">Compléter le dossier</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Documents -->
+                <section id="documents" class="dashboard-section">
+                    <h2>Documents</h2>
+                    <div class="documents-container">
+                        <div class="upload-zone">
+                            <div class="upload-box" id="uploadBox">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Glissez vos documents ici ou</p>
+                                <button class="btn btn-secondary">Parcourir</button>
+                                <input type="file" hidden id="fileInput" multiple>
+                            </div>
+                        </div>
+
+                        <div class="documents-list">
+                            <h3>Documents requis</h3>
+                            <div class="document-item">
+                                <i class="fas fa-file-pdf"></i>
+                                <div class="document-info">
+                                    <h4>Justificatif de domicile</h4>
+                                    <p>Fourni le 12/12/2024</p>
+                                </div>
+                                <span class="document-status complete">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                            </div>
+                            <div class="document-item">
+                                <i class="fas fa-file-pdf"></i>
+                                <div class="document-info">
+                                    <h4>Bulletins de salaire</h4>
+                                    <p>3 derniers mois requis</p>
+                                </div>
+                                <span class="document-status pending">
+                                    <i class="fas fa-clock"></i>
+                                </span>
+                            </div>
+                            <div class="document-item">
+                                <i class="fas fa-file-pdf"></i>
+                                <div class="document-info">
+                                    <h4>Avis d'imposition</h4>
+                                    <p>Année 2023</p>
+                                </div>
+                                <span class="document-status pending">
+                                    <i class="fas fa-clock"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Mon profil -->
+                <section id="profile" class="dashboard-section">
+                    <h2>Mon profil</h2>
+                    <div class="profile-container">
+                        <div class="profile-header">
+                            <div class="profile-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="profile-info">
+                                <h3>Jean Dupont</h3>
+                                <p>Membre depuis décembre 2024</p>
+                            </div>
+                        </div>
+
+                        <form class="profile-form">
+                            <div class="form-section">
+                                <h3>Informations personnelles</h3>
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="firstName">Prénom</label>
+                                        <input type="text" id="firstName" value="Jean">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastName">Nom</label>
+                                        <input type="text" id="lastName" value="Dupont">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" value="jean.dupont@email.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Téléphone</label>
+                                        <input type="tel" id="phone" value="06 12 34 56 78">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Adresse</h3>
+                                <div class="form-grid">
+                                    <div class="form-group full-width">
+                                        <label for="address">Adresse</label>
+                                        <input type="text" id="address" value="123 Rue de Paris">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="city">Ville</label>
+                                        <input type="text" id="city" value="Paris">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="zipCode">Code postal</label>
+                                        <input type="text" id="zipCode" value="75001">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Sécurité</h3>
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="currentPassword">Mot de passe actuel</label>
+                                        <input type="password" id="currentPassword">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="newPassword">Nouveau mot de passe</label>
+                                        <input type="password" id="newPassword">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="confirmPassword">Confirmer le mot de passe</label>
+                                        <input type="password" id="confirmPassword">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Enregistrer les modifications</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Messages -->
+                <section id="messages" class="dashboard-section">
+                    <h2>Messages</h2>
+                    <div class="messages-container">
+                        <div class="message-list">
+                            <div class="message-item unread">
+                                <div class="message-avatar">
+                                    <i class="fas fa-user-circle"></i>
+                                </div>
+                                <div class="message-content">
+                                    <div class="message-header">
+                                        <h4>Sophie Martin - Conseillère</h4>
+                                        <span class="message-date">Aujourd'hui, 10:30</span>
+                                    </div>
+                                    <p>Votre dossier de prêt auto a été approuvé ! Consultez les détails...</p>
+                                </div>
+                            </div>
+                            <div class="message-item unread">
+                                <div class="message-avatar">
+                                    <i class="fas fa-user-circle"></i>
+                                </div>
+                                <div class="message-content">
+                                    <div class="message-header">
+                                        <h4>Service Documents</h4>
+                                        <span class="message-date">Hier, 15:45</span>
+                                    </div>
+                                    <p>Documents manquants pour votre dossier de prêt travaux...</p>
+                                </div>
+                            </div>
+                            <div class="message-item">
+                                <div class="message-avatar">
+                                    <i class="fas fa-user-circle"></i>
+                                </div>
+                                <div class="message-content">
+                                    <div class="message-header">
+                                        <h4>Support CréditExpress</h4>
+                                        <span class="message-date">10/12/2024</span>
+                                    </div>
+                                    <p>Bienvenue sur CréditExpress ! Voici quelques informations...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

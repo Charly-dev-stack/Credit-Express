@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CréditExpress - Le Crédit en Ligne Simple et Rapide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><h1>CréditExpress</h1></a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#products" class="nav-link">Nos produits</a></li>
+                <li><a href="#testimonials" class="nav-link">Avis</a></li>
+                <li><a href="contact.html" class="nav-link">Aide & Contact</a></li>
+                <li><a href="simulateur.html" class="btn btn-secondary">Simuler votre prêt</a></li>
+                <div class="nav-buttons">
+                    <li><a href="login.html" class="btn btn-outline">Connexion</a></li>
+                    <li><a href="register.html" class="btn btn-primary">Inscription</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Réalisez vos projets avec un crédit adapté à vos besoins</h1>
+                <p>Chez CréditExpress, nous rendons le crédit simple, rapide et transparent. Obtenez une réponse immédiate et des fonds disponibles en 24h.</p>
+                <div class="hero-buttons">
+                    <a href="simulateur.html" class="btn btn-primary btn-large">Simuler votre prêt</a>
+                    <a href="#how-it-works" class="btn btn-outline btn-large">Comment ça marche ?</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Famille heureuse" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Pourquoi choisir CréditExpress ?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Réponse immédiate</h3>
+                    <p>Obtenez une réponse définitive en quelques minutes</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Taux attractifs</h3>
+                    <p>Des taux parmi les plus compétitifs du marché</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>100% sécurisé</h3>
+                    <p>Vos données sont protégées et cryptées</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Nos solutions de crédit</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Crédit Auto" loading="lazy">
+                    <h3>Crédit Auto</h3>
+                    <p>Financez votre véhicule neuf ou d'occasion</p>
+                    <ul>
+                        <li>Taux à partir de 3,50% TAEG fixe</li>
+                        <li>Jusqu'à 75 000€</li>
+                        <li>Durée de 12 à 84 mois</li>
+                    </ul>
+                    <a href="simulateur.html?type=auto" class="btn btn-primary">Simuler un crédit auto</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Crédit Hypothécaire" loading="lazy">
+                    <h3>Crédit Hypothécaire</h3>
+                    <p>Rénovez et améliorez votre habitat</p>
+                    <ul>
+                        <li>Taux à partir de 1,99% TAEG fixe</li>
+                        <li>Jusqu'à 75 000€</li>
+                        <li>Durée de 12 à 120 mois</li>
+                    </ul>
+                    <a href="simulateur.html?type=travaux" class="btn btn-primary">Simuler un crédit travaux</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Crédit Personnel" loading="lazy">
+                    <h3>Crédit Personnel</h3>
+                    <p>Financez tous vos projets personnels</p>
+                    <ul>
+                        <li>Taux à partir de 2,99% TAEG fixe</li>
+                        <li>Jusqu'à 50 000€</li>
+                        <li>Durée de 12 à 84 mois</li>
+                    </ul>
+                    <a href="simulateur.html?type=perso" class="btn btn-primary">Simuler un crédit personnel</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Crédit Professionnel" loading="lazy">
+                    <h3>Crédit Professionnel</h3>
+                    <p>Développez votre activité professionnelle</p>
+                    <ul>
+                        <li>Taux à partir de 2,50% TAEG fixe</li>
+                        <li>Jusqu'à 150 000€</li>
+                        <li>Durée de 12 à 84 mois</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Comment ça marche ?</h2>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Simulez votre crédit</h3>
+                    <p>Utilisez notre simulateur en ligne pour définir le montant et la durée de votre prêt</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Complétez votre dossier</h3>
+                    <p>Remplissez votre demande en ligne et téléchargez vos justificatifs</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Obtenez une réponse</h3>
+                    <p>Recevez une réponse immédiate à votre demande de crédit</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Recevez vos fonds</h3>
+                    <p>Après validation, recevez vos fonds sous 24h ouvrées</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Ils nous font confiance</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Processus simple et rapide. J'ai obtenu mon crédit en moins de 24h !"</p>
+                    <p class="testimonial-author">Marie D.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Un service client très réactif et des taux compétitifs."</p>
+                    <p class="testimonial-author">Thomas L.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Je recommande vivement CréditExpress pour leur professionnalisme."</p>
+                    <p class="testimonial-author">Sophie M.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Prêt à réaliser vos projets ?</h2>
+            <p>Simulez votre crédit en quelques clics et obtenez une réponse immédiate</p>
+            <a href="simulateur.html" class="btn btn-primary btn-large">Démarrer ma simulation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>CréditExpress</h4>
+                <p>Le crédit en ligne simple et rapide</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens utiles</h4>
+                <ul>
+                    <li><a href="about.html">Qui sommes-nous</a></li>
+                    <li><a href="legal.html">Mentions légales</a></li>
+                    <li><a href="privacy.html">Protection des données</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Email: contact@creditexpress.fr</li>
+                    <li>Tél: 01 23 45 67 89</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CréditExpress. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CréditExpress</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><h1>CréditExpress</h1></a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html#products" class="nav-link">Nos produits</a></li>
+                <li><a href="index.html#testimonials" class="nav-link">Avis</a></li>
+                <li><a href="contact.html" class="nav-link">Aide & Contact</a></li>
+                <li><a href="simulateur.html" class="btn btn-secondary">Simuler votre prêt</a></li>
+                <div class="nav-buttons">
+                    <li><a href="login.html" class="btn btn-outline">Connexion</a></li>
+                    <li><a href="register.html" class="btn btn-primary">Inscription</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="page-hero">
+            <div class="container">
+                <h1>Contactez-nous</h1>
+                <p>Notre équipe est à votre disposition pour répondre à toutes vos questions</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Nos Coordonnées</h2>
+                        <div class="info-card">
+                            <div class="info-icon">📞</div>
+                            <h3>Téléphone</h3>
+                            <p>01 23 45 67 89</p>
+                            <p class="subtitle">Du lundi au vendredi, 9h-18h</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">✉️</div>
+                            <h3>Email</h3>
+                            <p>contact@creditexpress.fr</p>
+                            <p class="subtitle">Réponse sous 24h ouvrées</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">📍</div>
+                            <h3>Adresse</h3>
+                            <p>123 Avenue des Finances</p>
+                            <p>75008 Paris, France</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Envoyez-nous un message</h2>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nom complet</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Sujet</label>
+                                <select id="subject" required>
+                                    <option value="">Choisissez un sujet</option>
+                                    <option value="info">Demande d'information</option>
+                                    <option value="support">Support technique</option>
+                                    <option value="complaint">Réclamation</option>
+                                    <option value="other">Autre</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h2>Questions Fréquentes</h2>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h3>Comment fonctionne le simulateur de prêt ?</h3>
+                            <p>Notre simulateur vous permet de calculer instantanément vos mensualités en fonction du montant et de la durée de votre prêt. Il suffit de remplir les champs requis et vous obtenez une estimation immédiate.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Quels documents sont nécessaires pour une demande de prêt ?</h3>
+                            <p>Pour une demande de prêt, vous aurez besoin de : pièce d'identité, justificatif de domicile, derniers bulletins de salaire, dernier avis d'imposition.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Quel est le délai de réponse pour une demande de prêt ?</h3>
+                            <p>Nous nous engageons à vous donner une réponse de principe immédiate. Une fois votre dossier complet, vous recevez une réponse définitive sous 24h ouvrées.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>CréditExpress</h4>
+                <p>Le crédit en ligne simple et rapide</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens utiles</h4>
+                <ul>
+                    <li><a href="about.html">Qui sommes-nous</a></li>
+                    <li><a href="legal.html">Mentions légales</a></li>
+                    <li><a href="privacy.html">Protection des données</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Email: contact@creditexpress.fr</li>
+                    <li>Tél: 01 23 45 67 89</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CréditExpress. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

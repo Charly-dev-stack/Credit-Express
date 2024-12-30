@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - CréditExpress</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><h1>CréditExpress</h1></a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html#products" class="nav-link">Nos produits</a></li>
+                <li><a href="index.html#testimonials" class="nav-link">Avis</a></li>
+                <li><a href="contact.html" class="nav-link">Aide & Contact</a></li>
+                <li><a href="simulateur.html" class="btn btn-secondary">Simuler votre prêt</a></li>
+                <div class="nav-buttons">
+                    <li><a href="login.html" class="btn btn-outline">Connexion</a></li>
+                    <li><a href="register.html" class="btn btn-primary">Inscription</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="auth-container">
+        <div class="auth-box">
+            <h2>Inscription</h2>
+            <form id="register-form" class="auth-form">
+                <div class="form-group">
+                    <label for="firstname">Prénom</label>
+                    <input type="text" id="firstname" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Nom</label>
+                    <input type="text" id="lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirmer le mot de passe</label>
+                    <input type="password" id="confirm-password" required>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="terms" required>
+                        <span class="checkmark"></span>
+                        J'accepte les <a href="terms.html">conditions d'utilisation</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Créer mon compte</button>
+            </form>
+            <div class="auth-footer">
+                <p>Déjà inscrit ? <a href="login.html">Connectez-vous</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>CréditExpress</h4>
+                <p>Le crédit en ligne simple et rapide</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens utiles</h4>
+                <ul>
+                    <li><a href="about.html">Qui sommes-nous</a></li>
+                    <li><a href="legal.html">Mentions légales</a></li>
+                    <li><a href="privacy.html">Protection des données</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Email: contact@creditexpress.fr</li>
+                    <li>Tél: 01 23 45 67 89</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CréditExpress. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
